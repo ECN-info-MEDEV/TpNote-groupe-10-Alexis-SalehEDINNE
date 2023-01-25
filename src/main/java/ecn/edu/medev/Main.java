@@ -6,9 +6,10 @@ package ecn.edu.medev;
 public class Main {
     /**
      * Méthode main permettant le lancement 
-     * @param args liste des paramètres à fournir en ligne de commande 
+     * @param args liste des paramètres à fournir en ligne de commande
      */
     public static void main(String[] args) {
         System.out.println("Hello world!");
+        System.out.println("Everything works");
     }
 }
