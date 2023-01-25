@@ -84,9 +84,11 @@
                                 <goals>
                                     <goal>report</goal>
                                 </goals>
+
                                 <configuration>
-                                    <dataFile>${project.build.directory}/coverage-reports/jacoco-ut.exec</dataFile>
-                                    <outputDirectory>${project.reporting.outputDirectory}/jacoco-ut</outputDirectory>
+                                    <formats>
+                                        <format>XML</format>
+                                    </formats>
                                 </configuration>
                             </execution>
                         </executions>
