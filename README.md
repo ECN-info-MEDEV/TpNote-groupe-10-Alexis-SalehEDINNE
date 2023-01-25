@@ -5,7 +5,7 @@ Date : 26 janvier 2023
 
 
 ## Introduction :
-Ce dépôt présente le travail réalisé lors de l'évaluation de la matière MEDEV : méthodologie de développement dans le cadre de l'option informatiqu pour les systèmes d'information. 
+Ce dépôt présente le travail réalisé lors de l'évaluation de la matière MEDEV : méthodologie de développement dans le cadre de l'option informatique pour les systèmes d'information (Ecole Centrale de Nantes 2022-2023)
 
 
 
