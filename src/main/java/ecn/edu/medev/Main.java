@@ -12,4 +12,14 @@ public class Main {
         System.out.println("Hello world!");
         System.out.println("Everything works");
     }
+
+    /**
+     * Test pour ajou de la java doc rapidement => cliquer sur option et entre au niveau de la methode
+     * pour ajout classe de test maj puis command et T
+     * @return
+     */
+    public static int getZero(){
+        return 0;
+
+    }
 }
