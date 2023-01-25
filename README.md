@@ -12,6 +12,7 @@ Ce dépôt présente le travail réalisé lors de l'évaluation de la matière M
 ### Membres du groupes
 
 Alexis IBRAHIM (alexis.ibrahim@eleves.ec-nantes.fr)
+
 Aurélien LOUESDON (aurelien.louesdon@eleves.ec-nantes.fr)
 
 
