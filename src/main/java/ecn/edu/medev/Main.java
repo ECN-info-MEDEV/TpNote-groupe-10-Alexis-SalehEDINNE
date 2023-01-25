@@ -14,9 +14,9 @@ public class Main {
     }
 
     /**
-     * Test pour ajou de la java doc rapidement => cliquer sur option et entre au niveau de la methode
+     * Test pour ajout de la java doc rapidement => cliquer sur option et entre au niveau de la methode
      * pour ajout classe de test maj puis command et T
-     * @return
+     * @return an int representing zero
      */
     public static int getZero(){
         return 0;
