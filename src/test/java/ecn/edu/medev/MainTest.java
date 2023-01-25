@@ -14,6 +14,7 @@ class MainTest {
      */
     @Test
     void main() {
+
         assertEquals(1,1);
     }
 
