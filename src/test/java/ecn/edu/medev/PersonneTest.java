@@ -1,16 +1,17 @@
 package ecn.edu.medev;
 
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import static org.junit.Assert.assertEquals;
 
-import static org.junit.jupiter.api.Assertions.*;
+import org.junit.Test;
 
-class PersonneTest {
+import org.junit.Before;
+
+public class PersonneTest {
 
     private Personne personneTest= new Personne();
 
     @Test
-    void marcher() {
+    public void marcher() {
         this.personneTest.marcher();
         assertEquals(1,this.personneTest.getPas());
     }

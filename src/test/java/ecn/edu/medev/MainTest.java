@@ -1,19 +1,20 @@
 package ecn.edu.medev;
 
-import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.Assert.assertEquals;
+
+import org.junit.Test;
 
 /**
  * Classe de Test de la classe principale
  */
-class MainTest {
+public class MainTest {
 
     /**
      * Test de la méthode main
      */
     @Test
-    void main() {
+    public void main() {
 
         assertEquals(1,1);
     }
@@ -23,7 +24,7 @@ class MainTest {
      * Test de la méthode getZero
      */
     @Test
-    void getZero() {
+    public void getZero() {
         assertEquals(0,Main.getZero());
     }
 }
