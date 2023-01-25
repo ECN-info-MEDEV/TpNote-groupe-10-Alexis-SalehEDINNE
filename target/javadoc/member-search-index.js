@@ -1,1 +1,0 @@
-memberSearchIndex = [{"p":"ecn.edu.medev","c":"Main","l":"getZero()"},{"p":"ecn.edu.medev","c":"Main","l":"Main()","u":"%3Cinit%3E()"},{"p":"ecn.edu.medev","c":"Main","l":"main(String[])","u":"main(java.lang.String[])"}];updateSearchResults();
