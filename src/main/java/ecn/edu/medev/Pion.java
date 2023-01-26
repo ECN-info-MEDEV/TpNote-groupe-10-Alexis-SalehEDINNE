@@ -23,5 +23,10 @@ public class Pion {
      * indique si un pion est décodé
      */
     private boolean isrevealed;
+
+    /**
+     * Indique si le pion est de la bonne couleur 
+     */
+    private boolean isBonneCouleur;
     
 }
