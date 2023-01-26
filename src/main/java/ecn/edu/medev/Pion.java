@@ -56,7 +56,11 @@ public class Pion {
     public String toString() {
         return color;
     }
-
+    /**
+     * Constructeur à deux paramètres d'un pion
+     * @param s
+     * @param i 
+     */
     public Pion(String s, int i) {
         this.pos = i;
         this.color = s;
