@@ -6,6 +6,6 @@ public class PlateauDeJeu {
 
 
     public void checkTentative(){
-        
+
     }
 }
