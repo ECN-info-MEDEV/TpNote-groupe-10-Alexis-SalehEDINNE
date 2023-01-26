@@ -11,5 +11,6 @@ package ecn.edu.medev;
  */
 public class Joueur {
 
+
     
 }
