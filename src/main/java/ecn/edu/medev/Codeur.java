@@ -14,11 +14,16 @@ import java.util.Scanner;
  */
 public class Codeur extends Role{
 
-
+    /**
+     * une list des pions choisis par le codeur
+     */
     private ArrayList<Pion> myPawns=new ArrayList<>();
 
 
-
+    /**
+     * un constructeur qui attribue le role codeur au  {@link Joueur} j
+     * @param j 
+     */
     public Codeur(Joueur j ){
         this.setNomDuJoeur(j.getName());
         System.out.println( this.getNomDuJoeur()+ " Veuillez selectionner la combinaison gagnante svp : ");

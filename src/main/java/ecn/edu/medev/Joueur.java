@@ -12,13 +12,22 @@ import java.util.Scanner;
  * @author User
  */
 public  class Joueur {
-    
+    /**
+     * attribut qui indique le nom du joueur 
+     */
     private String name;
-    
+    /**
+     * un chaine de caractère qui indique le role d'un joueur
+     */
     private String role;
-    
+    /**
+     * un réal qui indique le score d'un joueur
+     */
     private float score=0;
-
+    /**
+     * constructeur sans paramèttre d'un joueur qui prend une entrée clavier
+     * pour construire un joueur
+     */
     public Joueur(){
         System.out.println("veuillez entrer un nom de joueur svp : ");
         Scanner scan=new Scanner(System.in);
@@ -27,11 +36,15 @@ public  class Joueur {
 
     }
 
+
     public Joueur(String name){
 
         this.name=name;
 
     }
+
+
+    
 
     public String getName() {
         return name;
