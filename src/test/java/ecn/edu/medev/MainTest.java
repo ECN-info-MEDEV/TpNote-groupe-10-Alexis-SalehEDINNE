@@ -10,14 +10,7 @@ import org.junit.Test;
  */
 public class MainTest {
 
-    /**
-     * Test de la méthode main
-     */
-    @Test
-    public void main() {
 
-        assertEquals(1,1);
-    }
 
 
     /**
