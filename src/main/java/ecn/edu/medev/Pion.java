@@ -68,18 +68,36 @@ public class Pion {
      * @param pDecodeur
      * @return 
      */
-    public boolean comparer(Pion pDecodeur) {
-        System.out.println("comparaison de la combinaison");
-        if (pDecodeur.getColor() == this.color) {
+    public void comparer(Pion pDecodeur) {
+        System.out.println(" comparaison de la combinaison");
+        System.out.println(pDecodeur.getColor());
+        System.out.println(this.getColor());
+
+        if (pDecodeur.getColor() == this.getColor()) {
             pDecodeur.setIsBonneCouleur(true);
             System.out.println("C pour le pion dans la position : " + pDecodeur.getPos());
             if (pDecodeur.getPos() == this.getPos()) {
                 System.out.println("bingoo !!!");
                 pDecodeur.setIsrevealed(true);
-                return true;
+
             }
+
+
         }
-        return false;
+        else{
+            System.out.print('X');
+        }
     }
 
+    public boolean isIsrevealed() {
+        return isrevealed;
+    }
+
+    public boolean isBonneCouleur() {
+        return isBonneCouleur;
+    }
+
+    public void setBonneCouleur(boolean bonneCouleur) {
+        isBonneCouleur = bonneCouleur;
+    }
 }

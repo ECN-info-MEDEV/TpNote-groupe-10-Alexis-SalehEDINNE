@@ -20,17 +20,24 @@ public class Combinaison {
             Pion currentPion=pions.get(i);
             System.out.print(currentPion.toString());
         }
+        System.out.println("");
+
     }
     
     /**
      * cette methode permet au codeur d'indiquer que l'un des pions 
      * du décodeur est correcte
      */
-    public void indice(ArrayList<Pion> decodeurPions){
-        for(Pion p : pions){
-            for (Pion pc : decodeurPions){
-                pc.comparer(p);
-            }
+    public void indice(ArrayList<Pion> decodeurPions,ArrayList<Pion> trueCombinaison){
+        System.out.println("comparaison à la combinaison gagnate");
+
+        for(int i=0;i<4; i++){
+            Pion currentPionProvided=decodeurPions.get(i);
+            Pion truePion=trueCombinaison.get(i);
+            truePion.comparer(currentPionProvided);
+
+
+
         }
     }
 
@@ -39,4 +46,11 @@ public class Combinaison {
         this.pions.add(p);
     }
 
+    public ArrayList<Pion> getPions() {
+        return pions;
+    }
+
+    public void setPions(ArrayList<Pion> pions) {
+        this.pions = pions;
+    }
 }

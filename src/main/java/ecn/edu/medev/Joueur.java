@@ -27,6 +27,12 @@ public  class Joueur {
 
     }
 
+    public Joueur(String name){
+
+        this.name=name;
+
+    }
+
     public String getName() {
         return name;
     }

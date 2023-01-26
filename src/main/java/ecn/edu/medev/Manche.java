@@ -44,7 +44,7 @@ public class Manche {
             }
             currentCombinaison.affiche();
             this.combinaisonsTentees.add(currentCombinaison);
-            currentCombinaison.indice(combinaisonGagnante);
+            currentCombinaison.indice(currentCombinaison.getPions(),combinaisonGagnante);
 
 
         }
