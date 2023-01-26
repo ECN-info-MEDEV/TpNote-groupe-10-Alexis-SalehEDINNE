@@ -21,7 +21,7 @@ public class PlateauDeJeu {
 
 
     /**
-     * Liste des manches jouees dans le plateau 
+     * Liste des manches jouees dans le plateau
      */
     private ArrayList<Manche> manchesJouees;
 

@@ -12,6 +12,7 @@ public class Main {
         System.out.println("Hello world!");
         System.out.println("Everything works");
         PlateauDeJeu gameBoard=new PlateauDeJeu();
+        gameBoard.toString();
 
     }
 
