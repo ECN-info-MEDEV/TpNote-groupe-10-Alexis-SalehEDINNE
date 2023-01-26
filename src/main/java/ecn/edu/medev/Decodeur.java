@@ -19,6 +19,8 @@ public class Decodeur extends Role{
      */
     public Decodeur(Joueur j){
         this.setNomDuJoeur(j.getName());
+        this.setPlayerWithThisRole(j);
+
     }
     /**
      * cette méthode permet au décodeur de choisir sa combinaison

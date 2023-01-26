@@ -74,6 +74,7 @@ public class Manche {
 
 
     public void remporterLaManche(Combinaison combinaisonTentee) {
+        System.out.println("verification si la manche est terminée ou non '");
         boolean isOverCal = true;
         for (int i = 0; i < 4; ) {
             if (!combinaisonTentee.getPions().get(i).isIsrevealed()) {
