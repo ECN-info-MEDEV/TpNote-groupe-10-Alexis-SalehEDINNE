@@ -4,13 +4,22 @@ import java.util.ArrayList;
 
 
 /**
- * Classe representant le plateau de jeu sur lequel se deroule la partie 
+ * Classe representant le plateau de jeu sur lequel se deroule la partie
  */
 public class PlateauDeJeu {
 
+    /**
+     * Joueur 1 de la serie de manches
+     */
     private Joueur player1;
 
+
+    /**
+     * Joueur 2 de la serie de manches
+     */
     private Joueur player2;
+
+
 
 
 
