@@ -9,7 +9,7 @@ package ecn.edu.medev;
  * Classe representant un Joueur de la partie
  * @author User
  */
-public abstract class Joueur {
+public  class Joueur {
     
     private String name;
     

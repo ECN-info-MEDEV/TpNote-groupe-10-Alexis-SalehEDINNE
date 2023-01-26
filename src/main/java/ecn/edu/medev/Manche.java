@@ -10,4 +10,11 @@ public class Manche {
 
 
 
+    public void remporterLaManche(){
+
+
+    }
+
+
+
 }
