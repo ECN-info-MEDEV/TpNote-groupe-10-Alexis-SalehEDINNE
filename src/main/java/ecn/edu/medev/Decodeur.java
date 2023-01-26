@@ -16,5 +16,9 @@ public class Decodeur extends Role{
     void choisir() {
         
     }
+
+    public Decodeur(Joueur j){
+        this.setNomDuJoeur(j.getName());
+    }
     
 }

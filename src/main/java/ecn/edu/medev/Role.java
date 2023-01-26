@@ -12,7 +12,6 @@ package ecn.edu.medev;
 abstract class Role {
     
     
-   abstract void choisir();
 
    private String nomDuJoueur;
 

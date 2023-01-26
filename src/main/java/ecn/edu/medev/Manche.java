@@ -20,23 +20,18 @@ public class Manche {
     boolean isOver;
 
 
-    public Manche(){
+    public Manche(Codeur c,Decodeur d){
+        this.codeurManche=c;
+        this.decodeurManche=d;
         System.out.println("Creation d'une nouvelle manche");
-        System.out.println( codeurManche.getNomDuJoeur()+ " Veuillez selectionner la combinaison gagnante svp : ");
         Scanner scanner= new Scanner(System.in);
-        for(int i=0;i<4;i++){
-            String colorName=scanner.next();
-            Pion pionCombinaisonGagnante=new Pion(colorName,i);
-            combinaisonGagnante.add(pionCombinaisonGagnante);
-
-
-
-        }
 
         while(nombreTentatives>0){
             nombreTentatives=nombreTentatives-1;
+
             System.out.println( decodeurManche.getNomDuJoeur()+ " Veuillez saisir une combinaison ");
             Combinaison currentCombinaison= new Combinaison();
+            
             for(int i=0;i<4;i++){
                 String colorName=scanner.next();
                 Pion pionCombinaisonGagnante=new Pion(colorName,i);
