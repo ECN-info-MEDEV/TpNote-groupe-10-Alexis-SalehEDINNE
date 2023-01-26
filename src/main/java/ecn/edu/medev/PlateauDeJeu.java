@@ -2,6 +2,10 @@ package ecn.edu.medev;
 
 import java.util.ArrayList;
 
+
+/**
+ * Classe representant le plateau de jeu sur lequel se deroule la partie 
+ */
 public class PlateauDeJeu {
 
     private Joueur player1;
