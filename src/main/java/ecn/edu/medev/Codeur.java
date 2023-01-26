@@ -23,7 +23,6 @@ public class Codeur extends Role{
     
     @Override
     void choisir() {
-        for(int i = 0;
     }
 
 

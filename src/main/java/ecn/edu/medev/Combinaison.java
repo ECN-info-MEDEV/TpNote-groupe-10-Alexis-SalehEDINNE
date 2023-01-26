@@ -29,13 +29,7 @@ public class Combinaison {
     public void indice(ArrayList<Pion> codeurPions){
         for(Pion p : pions){
             for (Pion pc : codeurPions){
-                if(p.getColor()==pc.getColor()){
-                    p.setIsBonneCouleur(true);
-                    System.out.println("C pour le pion dans la position : "+ p.getPos());
-                    if(p.getPos()==pc.getPos()){
-                        System.out.println("bingoo !!!");
-                    }
-                }
+                pc.comparer(p);
             }
         }
     }

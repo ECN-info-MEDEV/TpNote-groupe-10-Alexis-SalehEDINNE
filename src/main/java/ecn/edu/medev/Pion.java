@@ -10,7 +10,7 @@ package ecn.edu.medev;
  * @author User
  */
 public class Pion {
-    
+
     /**
      * représente la couleur d'un pion
      */
@@ -53,14 +53,32 @@ public class Pion {
         this.pos = pos;
     }
 
-
-    public String toString(){
+    public String toString() {
         return color;
     }
 
-    public Pion(String s,int i){
-        this.pos=i;
-        this.color=s;
+    public Pion(String s, int i) {
+        this.pos = i;
+        this.color = s;
     }
-    
+
+    /**
+     * cette méthode permet de comparer deux pions tout en indiquant si
+     * nous avons seulement la couleur qui est bonne
+     * @param pDecodeur
+     * @return 
+     */
+    public boolean comparer(Pion pDecodeur) {
+        if (pDecodeur.getColor() == this.color) {
+            pDecodeur.setIsBonneCouleur(true);
+            System.out.println("C pour le pion dans la position : " + pDecodeur.getPos());
+            if (pDecodeur.getPos() == this.getPos()) {
+                System.out.println("bingoo !!!");
+                pDecodeur.setIsrevealed(true);
+                return true;
+            }
+        }
+        return false;
+    }
+
 }
