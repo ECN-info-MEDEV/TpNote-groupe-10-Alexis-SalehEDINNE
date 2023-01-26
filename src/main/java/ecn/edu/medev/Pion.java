@@ -25,7 +25,7 @@ public class Pion {
     private boolean isrevealed;
 
     /**
-     * Indique si le pion est de la bonne couleur 
+     * Indique si le pion est de la bonne couleur
      */
     private boolean isBonneCouleur;
     

@@ -5,6 +5,8 @@
  */
 package ecn.edu.medev;
 
+import java.util.Scanner;
+
 /**
  * Classe representant un Joueur de la partie
  * @author User
@@ -15,8 +17,14 @@ public  class Joueur {
     
     private String role;
     
-    private float score;
+    private float score=0;
 
+    public Joueur(){
+        System.out.println("veuillez entrer un nom de joueur svp : ");
+        Scanner scan=new Scanner(System.in);
+        String name=scan.nextLine();
+        this.name=name;
 
+    }
     
 }
