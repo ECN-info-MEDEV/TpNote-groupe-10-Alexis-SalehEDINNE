@@ -9,13 +9,10 @@ package ecn.edu.medev;
  *
  * @author User
  */
-public abstract class Joueur {
+abstract class Role extends Joueur{
     
-    private String name;
     
-    private String role;
-    
-    private float score;
+   abstract void choisir();
     
     
 }

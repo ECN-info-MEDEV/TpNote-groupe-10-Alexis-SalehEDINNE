@@ -9,13 +9,11 @@ package ecn.edu.medev;
  *
  * @author User
  */
-public abstract class Joueur {
-    
-    private String name;
-    
-    private String role;
-    
-    private float score;
-    
+public class Codeur extends Role{
+
+    @Override
+    void choisir() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
 }
