@@ -13,7 +13,32 @@ abstract class Role {
     
     
    abstract void choisir();
-   
-    
-    
+
+   private String nomDuJoueur;
+
+   private Joueur playerWithThisRole;
+
+   public String getNomDuJoeur() {
+      return nomDuJoueur;
+   }
+
+   public void setNomDuJoeur(String nomDuJoeur) {
+      this.nomDuJoueur = nomDuJoeur;
+   }
+
+   public String getNomDuJoueur() {
+      return nomDuJoueur;
+   }
+
+   public void setNomDuJoueur(String nomDuJoueur) {
+      this.nomDuJoueur = nomDuJoueur;
+   }
+
+   public Joueur getPlayerWithThisRole() {
+      return playerWithThisRole;
+   }
+
+   public void setPlayerWithThisRole(Joueur playerWithThisRole) {
+      this.playerWithThisRole = playerWithThisRole;
+   }
 }

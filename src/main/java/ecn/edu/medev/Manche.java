@@ -22,7 +22,7 @@ public class Manche {
 
     public Manche(){
         System.out.println("Creation d'une nouvelle manche");
-        System.out.println( codeurManche.getName()+ " Veuillez selectionner la combinaison gagnante svp : ");
+        System.out.println( codeurManche.getNomDuJoeur()+ " Veuillez selectionner la combinaison gagnante svp : ");
         Scanner scanner= new Scanner(System.in);
         for(int i=0;i<4;i++){
             String colorName=scanner.next();
@@ -35,7 +35,7 @@ public class Manche {
 
         while(nombreTentatives>0){
             nombreTentatives=nombreTentatives-1;
-            System.out.println( decodeurManche.getName()+ " Veuillez saisir une combinaison ");
+            System.out.println( decodeurManche.getNomDuJoeur()+ " Veuillez saisir une combinaison ");
             Combinaison currentCombinaison= new Combinaison();
             for(int i=0;i<4;i++){
                 String colorName=scanner.next();
