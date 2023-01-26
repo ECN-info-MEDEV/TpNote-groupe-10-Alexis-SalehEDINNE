@@ -6,6 +6,7 @@
 package ecn.edu.medev;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  *
@@ -13,17 +14,29 @@ import java.util.ArrayList;
  */
 public class Codeur extends Role{
 
-    /**
-     * 
-     */
-    private ArrayList<Pion> myPawns;
+
+    private ArrayList<Pion> myPawns=new ArrayList<>();
+
 
 
     
     
-    @Override
-    void choisir() {
-        for(int i = 0;
+
+
+    public Codeur(Joueur j ){
+        this.setNomDuJoeur(j.getName());
+        System.out.println( this.getNomDuJoeur()+ " Veuillez selectionner la combinaison gagnante svp : ");
+        Scanner scanner= new Scanner(System.in);
+        for(int i=0;i<4;i++){
+            String colorName=scanner.next();
+            Pion pionCombinaisonGagnante=new Pion(colorName,i);
+            myPawns.add(pionCombinaisonGagnante);
+
+
+
+        }
+
+
     }
 
 

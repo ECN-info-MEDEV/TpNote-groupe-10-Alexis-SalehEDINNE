@@ -68,11 +68,17 @@ public class PlateauDeJeu {
         nb = random.nextInt(2);
         if(nb==1){
             System.out.println("Le joueur " + this.player1.getName() + " a été designé comme le codeur");
-            Manche currentManche=new Manche();
+            Codeur codeur=new Codeur(this.player1);
+            Decodeur decodeur=new Decodeur(this.player2);
+            Manche currentManche=new Manche(codeur,decodeur);
+
 
         }
         else{
-            System.out.println("Le joueur " + this.player1.getName() + " a été designé comme le codeur");
+            System.out.println("Le joueur " + this.player2.getName() + " a été designé comme le codeur");
+            Codeur codeur=new Codeur(this.player2);
+            Decodeur decodeur=new Decodeur(this.player1);
+            Manche currentManche=new Manche(codeur,decodeur);
 
         }
 
