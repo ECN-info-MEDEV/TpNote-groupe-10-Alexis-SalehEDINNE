@@ -62,11 +62,11 @@ public  class Joueur {
         this.role = role;
     }
 
-    public float getScore() {
+    public int getScore() {
         return score;
     }
 
-    public void setScore(float score) {
+    public void setScore(int score) {
         this.score = score;
     }
 }
