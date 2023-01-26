@@ -11,9 +11,10 @@ package ecn.edu.medev;
  */
 public class Decodeur extends Role{
 
+    
     @Override
     void choisir() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+        
     }
     
 }
