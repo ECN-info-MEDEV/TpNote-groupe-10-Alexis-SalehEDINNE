@@ -16,5 +16,7 @@ public  class Joueur {
     private String role;
     
     private float score;
+
+
     
 }

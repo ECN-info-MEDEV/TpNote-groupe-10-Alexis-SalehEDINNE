@@ -20,6 +20,12 @@ public class PlateauDeJeu {
     private Joueur player2;
 
 
+    /**
+     * Liste des manches jouees dans le plateau 
+     */
+    private ArrayList<Manche> manchesJouees;
+
+
 
 
 
