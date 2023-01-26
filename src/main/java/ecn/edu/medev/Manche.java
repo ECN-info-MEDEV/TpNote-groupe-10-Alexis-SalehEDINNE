@@ -47,6 +47,7 @@ public class Manche {
         Scanner scanner= new Scanner(System.in);
 
         while(nombreTentatives>0 && !this.isOver){
+            this.codeurManche.getPlayerWithThisRole().setScore(this.codeurManche.getPlayerWithThisRole().getScore()+1);
             System.out.println();
             System.out.println("Il reste " + nombreTentatives + " tentatives ");
             nombreTentatives=nombreTentatives-1;
