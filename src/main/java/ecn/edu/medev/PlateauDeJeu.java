@@ -2,6 +2,7 @@ package ecn.edu.medev;
 
 import java.util.ArrayList;
 import java.util.Random;
+import java.util.Scanner;
 
 
 /**
@@ -26,6 +27,11 @@ public class PlateauDeJeu {
      */
     private ArrayList<Manche> manchesJouees;
 
+
+    /**
+     * Nombre de Manches à jouer pour gagner
+     */
+    private int nombreDetours=10;
 
 
 
@@ -63,6 +69,9 @@ public class PlateauDeJeu {
         this.player1=new Joueur();
         this.player2=new Joueur();
 
+        System.out.println("Veuillez entrer le nombre de tours : ");
+        Scanner scan=new Scanner(System.in);
+        this.nombreDetours= scan.nextInt();
         Random random = new Random();
         int nb;
         nb = random.nextInt(2);
@@ -70,7 +79,11 @@ public class PlateauDeJeu {
             System.out.println("Le joueur " + this.player1.getName() + " a été designé comme le codeur");
             Codeur codeur=new Codeur(this.player1);
             Decodeur decodeur=new Decodeur(this.player2);
-            Manche currentManche=new Manche(codeur,decodeur);
+            while(this.nombreDetours>0){
+                Manche currentManche=new Manche(codeur,decodeur);
+                manchesJouees.add(currentManche);
+                this.nombreDetours=this.nombreDetours-1;
+            }
 
 
         }
@@ -78,9 +91,15 @@ public class PlateauDeJeu {
             System.out.println("Le joueur " + this.player2.getName() + " a été designé comme le codeur");
             Codeur codeur=new Codeur(this.player2);
             Decodeur decodeur=new Decodeur(this.player1);
-            Manche currentManche=new Manche(codeur,decodeur);
+            while(this.nombreDetours>0){
+                Manche currentManche=new Manche(codeur,decodeur);
+                manchesJouees.add(currentManche);
+                this.nombreDetours=this.nombreDetours-1;
+            }
 
         }
 
     }
+
+
 }

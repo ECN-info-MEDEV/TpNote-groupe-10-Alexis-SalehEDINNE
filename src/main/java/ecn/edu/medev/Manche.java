@@ -15,9 +15,9 @@ public class Manche {
 
     ArrayList<Combinaison> combinaisonsTentees=new ArrayList<>();
 
-    boolean isEnCours;
+    boolean isEnCours=true;
 
-    boolean isOver;
+    boolean isOver=false;
 
 
     public Manche(Codeur c,Decodeur d){
@@ -27,7 +27,7 @@ public class Manche {
         System.out.println("Creation d'une nouvelle manche");
         Scanner scanner= new Scanner(System.in);
 
-        while(nombreTentatives>0){
+        while(nombreTentatives>0 && !this.isOver){
             System.out.println();
             System.out.println("Il reste " + nombreTentatives + " tentatives ");
             nombreTentatives=nombreTentatives-1;
@@ -45,13 +45,21 @@ public class Manche {
             currentCombinaison.affiche();
             this.combinaisonsTentees.add(currentCombinaison);
             currentCombinaison.indice(currentCombinaison.getPions(),combinaisonGagnante);
-
+            this.remporterLaManche(currentCombinaison);
 
         }
 
+
     }
 
-    public void remporterLaManche(){
+    public void remporterLaManche(Combinaison combinaisonTentee){
+        boolean isOverCal=true;
+        for(int i=0;i<4;){
+            if(!combinaisonTentee.getPions().get(i).isIsrevealed()){
+                isOverCal=false;
+            }
+        }
+        this.isOver=isOverCal;
 
 
     }
