@@ -28,5 +28,10 @@ public class Pion {
      * Indique si le pion est de la bonne couleur
      */
     private boolean isBonneCouleur;
+
+
+    public String toString(){
+        return color;
+    }
     
 }
