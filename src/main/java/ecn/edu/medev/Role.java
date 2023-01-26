@@ -12,11 +12,15 @@ package ecn.edu.medev;
 abstract class Role {
     
     
-
+   /**
+    * indique le nom du joueur 
+    */
    private String nomDuJoueur;
-
+   /**
+    * indique le joueur avec ce role
+    */
    private Joueur playerWithThisRole;
-
+   
    public String getNomDuJoeur() {
       return nomDuJoueur;
    }

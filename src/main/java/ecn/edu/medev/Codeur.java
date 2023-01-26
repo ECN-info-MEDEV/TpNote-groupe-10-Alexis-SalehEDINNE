@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
- *
+ * Classe représentant un joueur avec le role codeur de la manche actuelle
  * @author User
  */
 public class Codeur extends Role{
@@ -22,7 +22,7 @@ public class Codeur extends Role{
 
     /**
      * un constructeur qui attribue le role codeur au  {@link Joueur} j
-     * @param j 
+     * @param j un joueur auquel on attribue le role codeur dans la manche actuelle 
      */
     public Codeur(Joueur j ){
         this.setNomDuJoeur(j.getName());

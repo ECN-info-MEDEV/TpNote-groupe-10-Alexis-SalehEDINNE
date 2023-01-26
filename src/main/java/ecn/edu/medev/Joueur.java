@@ -36,16 +36,15 @@ public  class Joueur {
 
     }
 
-
+    /**
+     * un constructeur avec un seul paramètre qui est le nom du joueur
+     * @param name 
+     */
     public Joueur(String name){
 
         this.name=name;
 
     }
-
-
-    
-
     public String getName() {
         return name;
     }

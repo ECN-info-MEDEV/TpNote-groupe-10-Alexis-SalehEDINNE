@@ -4,22 +4,41 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Manche {
-
+    /**
+     * indique le joueur avec le role codeur dans cette manche
+     */
     private Codeur codeurManche;
-
+    /**
+     * indique el joueur avec le role décodeur dans cette manche
+     */
     private Decodeur decodeurManche;
-
+    /**
+     * indique le nombre de tentatives du décodeur restante pour deviner le code de l'adversaire
+     */
     int nombreTentatives=12;
-
+    /**
+     * représente la combinaison gagnante choisi par le codeur
+     */
     ArrayList<Pion> combinaisonGagnante;
-
+    /**
+     * représente la combinaison actuelle tentée par le décodeur
+     */
     ArrayList<Combinaison> combinaisonsTentees=new ArrayList<>();
 
+    /**
+     * indique si cette manche n'est pas encore terminé
+     */
     boolean isEnCours=true;
-
+    /**
+     * indique si la manche est terminé
+     */
     boolean isOver=false;
 
-
+    /**
+     * constructeur pour une manche avec deux paramètres 
+     * @param c le codeur de cette manche
+     * @param d le décodeur de cette manche
+     */
     public Manche(Codeur c,Decodeur d){
         this.codeurManche=c;
         this.decodeurManche=d;
@@ -52,19 +71,18 @@ public class Manche {
 
     }
 
-    public void remporterLaManche(Combinaison combinaisonTentee){
-        boolean isOverCal=true;
-        for(int i=0;i<4;){
-            if(!combinaisonTentee.getPions().get(i).isIsrevealed()){
-                isOverCal=false;
+
+    public void remporterLaManche(Combinaison combinaisonTentee) {
+        boolean isOverCal = true;
+        for (int i = 0; i < 4; ) {
+            if (!combinaisonTentee.getPions().get(i).isIsrevealed()) {
+                isOverCal = false;
             }
         }
-        this.isOver=isOverCal;
-
+        this.isOver = isOverCal;
 
     }
-
-
+    // ----------------here you find all the getters and the setters---------------------------
     public Codeur getCodeurManche() {
         return codeurManche;
     }
