@@ -8,7 +8,7 @@ package ecn.edu.medev;
 import java.util.ArrayList;
 
 /**
- *
+ * Classe représentant un pion 
  * @author User
  */
 public class Pion {

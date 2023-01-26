@@ -57,7 +57,9 @@ public class PlateauDeJeu {
         System.out.println("creer partie ");
 
     }
-
+    /**
+     * un constructeur sans paramètre pour créer un tableau de jeu
+     */
     public PlateauDeJeu(){
         System.out.println("Creation du Plateau de Jeu ");
         this.player1=new Joueur();

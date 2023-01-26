@@ -22,7 +22,7 @@ public class Decodeur extends Role{
     }
     /**
      * cette méthode permet au décodeur de choisir sa combinaison
-     * @return une liste depions choisis
+     * @return une liste de pions 
      */
     public ArrayList<Pion> deviner(){
         ArrayList<Pion> guess = new ArrayList<>();
