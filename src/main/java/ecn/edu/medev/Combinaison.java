@@ -9,7 +9,7 @@ import java.util.ArrayList;
 public class Combinaison {
 
 
-    private ArrayList<Pion> pions;
+    private ArrayList<Pion> pions= new ArrayList<>();
 
     /**
      * Methode permettant d'afficher la combinaison tentée par le décodeur
