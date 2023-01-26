@@ -6,9 +6,10 @@
 package ecn.edu.medev;
 
 /**
- *
+ * Classe representant un Joueur
  * @author User
  */
 public class Joueur {
+
     
 }
