@@ -13,7 +13,7 @@ Ce dépôt présente le travail réalisé lors de l'évaluation de la matière M
 
 Alexis IBRAHIM (alexis.ibrahim@eleves.ec-nantes.fr)
 
-Aurélien LOUESDON (aurelien.louesdon@eleves.ec-nantes.fr)
+Saleh Eddine EL FDALI (saleh-eddine.elfdali@eleves.ec-nantes.fr)
 
 
 ## Rendu : 
