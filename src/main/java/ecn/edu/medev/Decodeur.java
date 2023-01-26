@@ -11,9 +11,11 @@ package ecn.edu.medev;
  */
 public class Decodeur extends Role{
 
-    
 
-
+    /**
+     * un constructeur qui donne le role décodeur à un joueur
+     * @param j le joueur
+     */
     public Decodeur(Joueur j){
         this.setNomDuJoeur(j.getName());
     }

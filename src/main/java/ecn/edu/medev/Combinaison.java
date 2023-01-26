@@ -8,7 +8,9 @@ import java.util.ArrayList;
  */
 public class Combinaison {
 
-
+    /**
+     * une liste des pions choisi par un décodeur (tentative)
+     */
     private ArrayList<Pion> pions= new ArrayList<>();
 
     /**
@@ -34,7 +36,10 @@ public class Combinaison {
         }
     }
 
-
+    /**
+     * cette méthode permet d'ajouter un pion à la collection d'un décodeur
+     * @param p représnet le pion choisi par le décodeur à ajouter
+     */
     public void add(Pion p){
         this.pions.add(p);
     }
