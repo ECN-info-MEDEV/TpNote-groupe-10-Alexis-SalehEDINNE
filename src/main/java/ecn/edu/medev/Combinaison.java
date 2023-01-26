@@ -21,6 +21,24 @@ public class Combinaison {
             System.out.print(currentPion.toString());
         }
     }
+    
+    /**
+     * cette methode permet au codeur d'indiquer que l'un des pions 
+     * du décodeur est correcte
+     */
+    public void indice(ArrayList<Pion> codeurPions){
+        for(Pion p : pions){
+            for (Pion pc : codeurPions){
+                if(p.getColor()==pc.getColor()){
+                    p.setIsBonneCouleur(true);
+                    System.out.println("C pour le pion dans la position : "+ p.getPos());
+                    if(p.getPos()==pc.getPos()){
+                        System.out.println("bingoo !!!");
+                    }
+                }
+            }
+        }
+    }
 
 
 }

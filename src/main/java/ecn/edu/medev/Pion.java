@@ -29,6 +29,30 @@ public class Pion {
      */
     private boolean isBonneCouleur;
 
+    public void setIsrevealed(boolean isrevealed) {
+        this.isrevealed = isrevealed;
+    }
+
+    public void setIsBonneCouleur(boolean isBonneCouleur) {
+        this.isBonneCouleur = isBonneCouleur;
+    }
+
+    public String getColor() {
+        return color;
+    }
+
+    public int getPos() {
+        return pos;
+    }
+
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public void setPos(int pos) {
+        this.pos = pos;
+    }
+
 
     public String toString(){
         return color;
