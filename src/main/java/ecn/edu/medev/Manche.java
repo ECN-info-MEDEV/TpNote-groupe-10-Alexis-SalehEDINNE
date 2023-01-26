@@ -13,7 +13,7 @@ public class Manche {
 
     ArrayList<Pion> combinaisonGagnante;
 
-    ArrayList<Combinaison> combinaisonsTentees;
+    ArrayList<Combinaison> combinaisonsTentees=new ArrayList<>();
 
     boolean isEnCours;
 
@@ -23,15 +23,18 @@ public class Manche {
     public Manche(Codeur c,Decodeur d){
         this.codeurManche=c;
         this.decodeurManche=d;
+        this.combinaisonGagnante=codeurManche.getMyPawns();
         System.out.println("Creation d'une nouvelle manche");
         Scanner scanner= new Scanner(System.in);
 
         while(nombreTentatives>0){
+            System.out.println();
+            System.out.println("Il reste " + nombreTentatives + " tentatives ");
             nombreTentatives=nombreTentatives-1;
 
             System.out.println( decodeurManche.getNomDuJoeur()+ " Veuillez saisir une combinaison ");
             Combinaison currentCombinaison= new Combinaison();
-            
+
             for(int i=0;i<4;i++){
                 String colorName=scanner.next();
                 Pion pionCombinaisonGagnante=new Pion(colorName,i);
@@ -39,8 +42,9 @@ public class Manche {
 
 
             }
-
+            currentCombinaison.affiche();
             this.combinaisonsTentees.add(currentCombinaison);
+            currentCombinaison.indice(combinaisonGagnante);
 
 
         }

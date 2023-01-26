@@ -26,9 +26,9 @@ public class Combinaison {
      * cette methode permet au codeur d'indiquer que l'un des pions 
      * du décodeur est correcte
      */
-    public void indice(ArrayList<Pion> codeurPions){
+    public void indice(ArrayList<Pion> decodeurPions){
         for(Pion p : pions){
-            for (Pion pc : codeurPions){
+            for (Pion pc : decodeurPions){
                 pc.comparer(p);
             }
         }

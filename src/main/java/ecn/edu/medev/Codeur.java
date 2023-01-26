@@ -33,7 +33,11 @@ public class Codeur extends Role{
         }
     }
 
+    public ArrayList<Pion> getMyPawns() {
+        return myPawns;
+    }
 
-
-    
+    public void setMyPawns(ArrayList<Pion> myPawns) {
+        this.myPawns = myPawns;
+    }
 }

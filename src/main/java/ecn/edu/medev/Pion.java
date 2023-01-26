@@ -69,6 +69,7 @@ public class Pion {
      * @return 
      */
     public boolean comparer(Pion pDecodeur) {
+        System.out.println("comparaison de la combinaison");
         if (pDecodeur.getColor() == this.color) {
             pDecodeur.setIsBonneCouleur(true);
             System.out.println("C pour le pion dans la position : " + pDecodeur.getPos());

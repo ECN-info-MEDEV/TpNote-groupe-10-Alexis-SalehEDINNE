@@ -12,7 +12,7 @@ package ecn.edu.medev;
 public class Decodeur extends Role{
 
     
-   
+
 
     public Decodeur(Joueur j){
         this.setNomDuJoeur(j.getName());
