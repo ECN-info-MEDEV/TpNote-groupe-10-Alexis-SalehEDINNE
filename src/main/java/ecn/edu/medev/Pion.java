@@ -102,19 +102,19 @@ public class Pion {
     /**
      * cette méthode permet de comparer deux pions tout en indiquant si
      * nous avons seulement la couleur qui est bonne
-     * @param pDecodeur
+     * @param pCodeurs
      * @return
      */
-    public void comparer(ArrayList<Pion> pDecodeur) {
-        for (int i=0;i<pDecodeur.size();i++){
-            Pion currentPion=pDecodeur.get(i);
-            if(currentPion.equals(this.getColor())){
+    public void comparer(ArrayList<Pion> pCodeurs) {
+        for (int i=0;i<pCodeurs.size();i++){
+            Pion currentPion=pCodeurs.get(i);
+            if(currentPion.getColor().equals(this.getColor())){
               this.setIsBonneCouleur(true);
 
             }
 
         }
-        Pion samePositionPion=pDecodeur.get(this.getPos());
+        Pion samePositionPion=pCodeurs.get(this.getPos());
         if(this.isBonneCouleur){
             if (samePositionPion.getPos() == this.getPos()) {
                 System.out.print("B");

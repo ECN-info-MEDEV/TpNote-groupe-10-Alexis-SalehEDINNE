@@ -82,9 +82,13 @@ public class PlateauDeJeu {
             Codeur codeur=new Codeur(this.player1);
             Decodeur decodeur=new Decodeur(this.player2);
             while(this.nombreDetours>0){
+                System.out.println("Le score du joueur " + player1.getName() + "est de " + player1.getScore());
+                System.out.println("Le score du joueur " + player2.getName() + "est de " + player2.getScore());
+
                 Manche currentManche=new Manche(codeur,decodeur);
                 manchesJouees.add(currentManche);
                 this.nombreDetours=this.nombreDetours-1;
+
             }
 
 
@@ -103,5 +107,9 @@ public class PlateauDeJeu {
 
     }
 
+    public void switchCodeur(Joueur player1, Joueur player2){
+        Codeur codeur=new Codeur(this.player1);
+        Decodeur decodeur=new Decodeur(this.player2);
 
+    }
 }

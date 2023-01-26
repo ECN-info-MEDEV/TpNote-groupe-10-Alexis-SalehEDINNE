@@ -32,7 +32,7 @@ public class Combinaison {
      */
     public void indice(ArrayList<Pion> decodeurPions,ArrayList<Pion> trueCombinaison){
         System.out.println("comparaison à la combinaison gagnate");
-
+        System.out.println("Rappel B= bonne couleur bonne place, C= bonne couleur, X=rien");
         for(int i=0;i<4; i++){
             Pion currentPionProvided=decodeurPions.get(i);
             currentPionProvided.comparer(trueCombinaison);

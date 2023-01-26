@@ -67,7 +67,7 @@ public class Manche {
             this.remporterLaManche(currentCombinaison);
 
         }
-
+        System.out.println("Fin de la manche");
 
     }
 
