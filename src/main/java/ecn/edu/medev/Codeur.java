@@ -14,11 +14,15 @@ import java.util.ArrayList;
 public class Codeur extends Role{
 
     private ArrayList<Pion> myPawns;
+
+
     
     
     @Override
     void choisir() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
+
     
 }

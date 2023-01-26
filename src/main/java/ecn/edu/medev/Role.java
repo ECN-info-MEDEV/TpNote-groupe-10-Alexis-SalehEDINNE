@@ -9,7 +9,7 @@ package ecn.edu.medev;
  *
  * @author User
  */
-abstract class Role extends Joueur{
+abstract class Role {
     
     
    abstract void choisir();

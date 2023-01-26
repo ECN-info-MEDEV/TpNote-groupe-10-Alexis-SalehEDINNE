@@ -58,5 +58,59 @@ public class Manche {
     }
 
 
+    public Codeur getCodeurManche() {
+        return codeurManche;
+    }
 
+    public void setCodeurManche(Codeur codeurManche) {
+        this.codeurManche = codeurManche;
+    }
+
+    public Decodeur getDecodeurManche() {
+        return decodeurManche;
+    }
+
+    public void setDecodeurManche(Decodeur decodeurManche) {
+        this.decodeurManche = decodeurManche;
+    }
+
+    public int getNombreTentatives() {
+        return nombreTentatives;
+    }
+
+    public void setNombreTentatives(int nombreTentatives) {
+        this.nombreTentatives = nombreTentatives;
+    }
+
+    public ArrayList<Pion> getCombinaisonGagnante() {
+        return combinaisonGagnante;
+    }
+
+    public void setCombinaisonGagnante(ArrayList<Pion> combinaisonGagnante) {
+        this.combinaisonGagnante = combinaisonGagnante;
+    }
+
+    public ArrayList<Combinaison> getCombinaisonsTentees() {
+        return combinaisonsTentees;
+    }
+
+    public void setCombinaisonsTentees(ArrayList<Combinaison> combinaisonsTentees) {
+        this.combinaisonsTentees = combinaisonsTentees;
+    }
+
+    public boolean isEnCours() {
+        return isEnCours;
+    }
+
+    public void setEnCours(boolean enCours) {
+        isEnCours = enCours;
+    }
+
+    public boolean isOver() {
+        return isOver;
+    }
+
+    public void setOver(boolean over) {
+        isOver = over;
+    }
 }

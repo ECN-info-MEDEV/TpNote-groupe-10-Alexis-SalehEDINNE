@@ -69,6 +69,7 @@ public class PlateauDeJeu {
         if(nb==1){
             System.out.println("Le joueur " + this.player1.getName() + " a été designé comme le codeur");
             Manche currentManche=new Manche();
+            
         }
         else{
             System.out.println("Le joueur " + this.player1.getName() + " a été designé comme le codeur");
