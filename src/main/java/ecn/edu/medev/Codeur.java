@@ -38,6 +38,10 @@ public class Codeur extends Role{
         }
     }
 
+    public Codeur(String name){
+        this.setNomDuJoeur(name);
+    }
+
     public ArrayList<Pion> getMyPawns() {
         return myPawns;
     }
