@@ -21,9 +21,9 @@ public  class Joueur {
      */
     private String role;
     /**
-     * un réal qui indique le score d'un joueur
+     * un entier qui indique le score d'un joueur
      */
-    private float score=0;
+    private int score=0;
     /**
      * constructeur sans paramèttre d'un joueur qui prend une entrée clavier
      * pour construire un joueur
