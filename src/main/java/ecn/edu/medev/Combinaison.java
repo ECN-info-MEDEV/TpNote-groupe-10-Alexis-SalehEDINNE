@@ -41,4 +41,8 @@ public class Combinaison {
     }
 
 
+    public void add(Pion p){
+        this.pions.add(p);
+    }
+
 }

@@ -57,5 +57,10 @@ public class Pion {
     public String toString(){
         return color;
     }
+
+    public Pion(String s,int i){
+        this.pos=i;
+        this.color=s;
+    }
     
 }
