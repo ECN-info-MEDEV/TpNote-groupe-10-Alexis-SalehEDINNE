@@ -27,6 +27,9 @@ public class Decodeur extends Role{
     public ArrayList<Pion> deviner(){
         ArrayList<Pion> guess = new ArrayList<>();
         System.out.println( this.getNomDuJoeur()+ " Veuillez selectionner la combinaison gagnante pour décoder la combinaison de ton adversaire et gagner svp : ");
+        System.out.println(  " Rappel du code couleur R=Rouge, J=Jaune,V=Vert, B=Bleu,W=Blanc,N=Noir ");
+        System.out.println(  " Veuillez entrer chaque lettre une par une et cliquer sur entrèe ");
+
         Scanner scanner= new Scanner(System.in);
         for(int i=0;i<4;i++){
             String colorName=scanner.next();

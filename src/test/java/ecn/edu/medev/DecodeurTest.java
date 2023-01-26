@@ -8,5 +8,6 @@ public class DecodeurTest {
 
     @Test
     public void deviner() {
+
     }
 }

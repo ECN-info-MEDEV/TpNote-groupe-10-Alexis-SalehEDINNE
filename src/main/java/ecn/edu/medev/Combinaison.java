@@ -35,8 +35,7 @@ public class Combinaison {
 
         for(int i=0;i<4; i++){
             Pion currentPionProvided=decodeurPions.get(i);
-            Pion truePion=trueCombinaison.get(i);
-            truePion.comparer(currentPionProvided);
+            currentPionProvided.comparer(trueCombinaison);
 
 
 

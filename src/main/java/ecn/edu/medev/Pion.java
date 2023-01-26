@@ -5,6 +5,8 @@
  */
 package ecn.edu.medev;
 
+import java.util.ArrayList;
+
 /**
  *
  * @author User
@@ -73,21 +75,68 @@ public class Pion {
      * @return 
      */
     public void comparer(Pion pDecodeur) {
-        System.out.println(" comparaison de la combinaison");
-        System.out.println(pDecodeur.getColor());
-        System.out.println(this.getColor());
 
-        if (pDecodeur.getColor() == this.getColor()) {
-            pDecodeur.setIsBonneCouleur(true);
-            System.out.println("C pour le pion dans la position : " + pDecodeur.getPos());
+
+        if (pDecodeur.getColor().equals(this.getColor())) {
             if (pDecodeur.getPos() == this.getPos()) {
-                System.out.println("bingoo !!!");
+                System.out.print("B");
                 pDecodeur.setIsrevealed(true);
+
+            }
+            else{
+                System.out.print("C");
+                pDecodeur.setIsBonneCouleur(true);
+
+
 
             }
 
 
         }
+        else{
+            System.out.print('X');
+        }
+    }
+
+
+    /**
+     * cette méthode permet de comparer deux pions tout en indiquant si
+     * nous avons seulement la couleur qui est bonne
+     * @param pDecodeur
+     * @return
+     */
+    public void comparer(ArrayList<Pion> pDecodeur) {
+        for (int i=0;i<pDecodeur.size();i++){
+            Pion currentPion=pDecodeur.get(i);
+            if(currentPion.equals(this.getColor())){
+              this.setIsBonneCouleur(true);
+
+            }
+
+        }
+        Pion samePositionPion=pDecodeur.get(this.getPos());
+        if(this.isBonneCouleur){
+            if (samePositionPion.getPos() == this.getPos()) {
+                System.out.print("B");
+                this.setIsrevealed(true);
+
+            }
+            else{
+                System.out.print("C");
+
+
+
+            }
+
+        }
+
+
+
+
+
+
+
+
         else{
             System.out.print('X');
         }
