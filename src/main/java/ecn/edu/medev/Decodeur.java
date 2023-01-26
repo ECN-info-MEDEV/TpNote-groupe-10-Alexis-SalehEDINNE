@@ -12,10 +12,7 @@ package ecn.edu.medev;
 public class Decodeur extends Role{
 
     
-    @Override
-    void choisir() {
-        
-    }
+   
 
     public Decodeur(Joueur j){
         this.setNomDuJoeur(j.getName());
