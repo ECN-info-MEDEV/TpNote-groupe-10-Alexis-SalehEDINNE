@@ -6,7 +6,7 @@
 package ecn.edu.medev;
 
 /**
- *
+ * Classe representant un Joueur de la partie
  * @author User
  */
 public abstract class Joueur {
@@ -16,6 +16,5 @@ public abstract class Joueur {
     private String role;
     
     private float score;
-    
     
 }
