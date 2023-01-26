@@ -6,10 +6,10 @@
 package ecn.edu.medev;
 
 /**
- *
+ * Classe representant le decodeur de la manche actuelle
  * @author User
  */
-public class Décodeur extends Role{
+public class Decodeur extends Role{
 
     @Override
     void choisir() {
