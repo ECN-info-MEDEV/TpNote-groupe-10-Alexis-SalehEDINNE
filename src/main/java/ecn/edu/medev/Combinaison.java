@@ -30,15 +30,26 @@ public class Combinaison {
      * cette methode permet au codeur d'indiquer que l'un des pions 
      * du décodeur est correcte
      */
-    public void indice(ArrayList<Pion> decodeurPions,ArrayList<Pion> trueCombinaison){
+    public void indice(ArrayList<Pion> decodeurPions,ArrayList<Pion> trueCombinaison,Manche manche){
         System.out.println("comparaison à la combinaison gagnate");
         System.out.println("Rappel B= bonne couleur bonne place, C= bonne couleur, X=rien");
+        boolean isCombinaisonFagnante=true;
         for(int i=0;i<4; i++){
             Pion currentPionProvided=decodeurPions.get(i);
             currentPionProvided.comparer(trueCombinaison);
+            if(!currentPionProvided.isIsrevealed()){
+                isCombinaisonFagnante=false;
+            }
 
 
 
+
+        }
+        if(isCombinaisonFagnante){
+            manche.setOver(true);
+        }
+        else{
+            manche.getCodeurManche().setPointSurManche(manche.getCodeurManche().getPointSurManche()+1);
         }
     }
 

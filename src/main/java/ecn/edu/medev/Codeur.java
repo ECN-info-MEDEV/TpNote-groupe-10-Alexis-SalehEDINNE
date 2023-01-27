@@ -20,6 +20,8 @@ public class Codeur extends Role{
     private ArrayList<Pion> myPawns=new ArrayList<>();
 
 
+
+    private int pointSurManche=0;
     /**
      * un constructeur qui attribue le role codeur au  {@link Joueur} j
      * @param j un joueur auquel on attribue le role codeur dans la manche actuelle 
@@ -52,5 +54,14 @@ public class Codeur extends Role{
 
     public void setMyPawns(ArrayList<Pion> myPawns) {
         this.myPawns = myPawns;
+    }
+
+
+    public int getPointSurManche() {
+        return pointSurManche;
+    }
+
+    public void setPointSurManche(int pointSurManche) {
+        this.pointSurManche = pointSurManche;
     }
 }

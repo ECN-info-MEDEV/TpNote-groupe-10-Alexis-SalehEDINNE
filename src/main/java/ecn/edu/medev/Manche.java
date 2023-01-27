@@ -47,12 +47,11 @@ public class Manche {
         Scanner scanner= new Scanner(System.in);
 
         while(nombreTentatives>0 && !this.isOver){
-            this.codeurManche.getPlayerWithThisRole().setScore(this.codeurManche.getPlayerWithThisRole().getScore()+1);
             System.out.println();
             System.out.println("Il reste " + nombreTentatives + " tentatives ");
             nombreTentatives=nombreTentatives-1;
 
-            System.out.println( decodeurManche.getNomDuJoeur()+ " Veuillez saisir une combinaison ");
+            System.out.println( decodeurManche.getNomDuJoeur()+ " Veuillez saisir une combinaison à tester ");
             Combinaison currentCombinaison= new Combinaison();
 
             for(int i=0;i<4;i++){
@@ -64,7 +63,7 @@ public class Manche {
             }
             currentCombinaison.affiche();
             this.combinaisonsTentees.add(currentCombinaison);
-            currentCombinaison.indice(currentCombinaison.getPions(),combinaisonGagnante);
+            currentCombinaison.indice(currentCombinaison.getPions(),combinaisonGagnante,this);
             this.remporterLaManche(currentCombinaison);
 
         }
@@ -74,9 +73,10 @@ public class Manche {
 
 
     public void remporterLaManche(Combinaison combinaisonTentee) {
+        System.out.println("\n");
         System.out.println("verification si la manche est terminée ou non '");
         boolean isOverCal = true;
-        for (int i = 0; i < 4; ) {
+        for (int i = 0; i < 4; i++) {
             if (!combinaisonTentee.getPions().get(i).isIsrevealed()) {
                 isOverCal = false;
             }

@@ -14,3 +14,4 @@ target/
 .iml
 TpNoteMedev.iml
 
+!target/jacoco.exec

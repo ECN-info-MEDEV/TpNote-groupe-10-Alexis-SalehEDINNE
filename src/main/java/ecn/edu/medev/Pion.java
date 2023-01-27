@@ -24,12 +24,12 @@ public class Pion {
     /**
      * indique si un pion est décodé
      */
-    private boolean isrevealed;
+    private boolean isrevealed=false;
 
     /**
      * Indique si le pion est de la bonne couleur
      */
-    private boolean isBonneCouleur;
+    private boolean isBonneCouleur=false;
 
     public void setIsrevealed(boolean isrevealed) {
         this.isrevealed = isrevealed;
@@ -116,7 +116,7 @@ public class Pion {
         }
         Pion samePositionPion=pCodeurs.get(this.getPos());
         if(this.isBonneCouleur){
-            if (samePositionPion.getPos() == this.getPos()) {
+            if (samePositionPion.getPos() == this.getPos() && samePositionPion.getColor().equals(this.getColor())) {
                 System.out.print("B");
                 this.setIsrevealed(true);
 
